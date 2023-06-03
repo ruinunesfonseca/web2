@@ -1,0 +1,144 @@
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;  
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 18px;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px; 
+}
+
+.tooltip-personal-container {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  position: absolute;
+  top: 10;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 10;
+}
+
+.personal-image-tooltip {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  object-fit: cover; 
+}
+
+.personal-name-tooltip {
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.personal-subscribers-tooltip {
+  color: rgb(150, 150, 150);
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  border-style: solid;
+  border-color: red;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }  
+}
+
+@media (min-width: 1000px) {
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-author,
+  .video-stats {
+    font-size: 14px;
+  }
+}
+
+
+.channel-picture {
+  position: relative;  
+}
+
+.channel-picture:hover .tooltip-personal-container {
+  opacity: 1;
+}
+
+
